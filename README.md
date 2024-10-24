@@ -22,12 +22,12 @@ Web server (tested on PHP 7.4):
 2) Create a API key on Binance, copy the key and secret and enable Futures trading on it. Add your balance to the Futures account.
 3) Create a database on MySQL and run the file createstructure.sql on it.
 4) Update the file bot.php seting the parameters needed, keep the variable $tablename unchanged. Update also the file config.php with your database connection settings, timezone setting and email SMTP server settings.
-5) Create your signal alert on TradingView and set as alert message a JSON content with the following structure (see example below):
+5) Create your signal alert on TradingView and set as alert message a JSON content with the following structure (see example below). You need to enable the Webhook URL option in the Notifications tab of the alert and type the URL of your bot.php page there.
 
 The JSON message sent should look like this:
 {"direction": "SELL", "ticker": "BTCUSDT.P", "TPtrailingstop": "yes", "price": "66470.00", "timeframe": "60", "signalname": "HREV", "assettype": "BINANCE", "TP": "66000", "SL": "67000", "key": "Trade2024!", "wait": "0.5"}
 
-Note: you can find a real-world example of a very good trading signal alert that monitors up to 40 assets in the file alert-example.txt (Pinescript code). Use it as a template and change your logic/assets according your preferences.
+Note: you can find a real-world example of a very good trading signal alert that monitors up to 40 assets in the file alert-example.txt (Pinescript code). Use it as a template and change your logic/assets according your preferences. In the tab Settings of the alert, keep the 'Alert name' field blank because the JSON will be sent via Pinescript code. In the Notifications tab of the alert, enable the Webhook URL option and type the URL of your bot.php page there.
 
 I hope I can help you to automate your trades and make a lot of money! Have a good life!
 
