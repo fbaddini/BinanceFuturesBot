@@ -1,8 +1,7 @@
 # BinanceFuturesBot
 PHP code of a full-featured bot to trade on the Binance Futures platform using TradingView signal alerts
-Developer: Francisco Baddini
-Version: 1.0
-Based on PHP Binance API Library from Jon Eyrick (the library was adapted to the Futures platform)
+
+Developer: Francisco Baddini | Version: 1.0 | Based on PHP Binance API Library from Jon Eyrick (the library was adapted to the Futures platform) - Thanks Jon!
 
 Bot features:
 - Works via TradingView webhooks receiving TV alerts and starting a position on Binance Futures trading platform.
