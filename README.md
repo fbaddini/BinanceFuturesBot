@@ -33,3 +33,6 @@ I hope I can help you to automate your trades and make a lot of money! Have a go
 
 Thanks,
 Francisco Baddini
+
+
+(RELEASING THE CODE SOON!)
